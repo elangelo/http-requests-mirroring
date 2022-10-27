@@ -124,7 +124,7 @@ func forwardRequest(req *http.Request, reqSourceIP string, reqDestionationPort s
 	}
 
 	// create a new url from the raw RequestURI sent by the client
-	var dest = "http://eeDisq-6700-202210210852-alb-2094178799.us-east-1.elb.amazonaws.com"
+	var dest = "http://10.0.23.217"
 	log.Println("Forwarding traffic to %f", dest)
 	url := fmt.Sprintf("%s%s", dest, req.RequestURI)
 
