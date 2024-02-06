@@ -124,7 +124,7 @@ func forwardRequest(req *http.Request, reqSourceIP string, reqDestionationPort s
 	}
 
 	// create a new url from the raw RequestURI sent by the client
-	var dest = "http://10.0.23.217"
+	var dest = "http://httplogger.aws.disqover.com"
 	log.Println("Forwarding traffic to %f", dest)
 	url := fmt.Sprintf("%s%s", dest, req.RequestURI)
 
